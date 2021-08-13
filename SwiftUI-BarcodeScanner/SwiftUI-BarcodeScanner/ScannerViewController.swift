@@ -5,12 +5,17 @@
 //  Created by Lee Davis on 8/12/21.
 //
 
-import Foundation
 import AVFoundation
 import UIKit
 
+enum CameraError: String {
+    case invalidDeviceInput = "Something is wrong with the Camera. We are unable to capture the input/"
+    case invalidScannedValue = "The value scanned is not valid. This app scans EAN-8 and EAN-13."
+}
+
 protocol ScannerViewControllerDelegate {
     func didFind(barcode: String)
+    func didSurface(error: CameraError)
 }
 
 final class ScannerViewController: UIViewController {
@@ -44,7 +49,7 @@ final class ScannerViewController: UIViewController {
             captureSession.addInput(videoInput)
         }
         else {
-            return
+            scannerDelegate?.didSurface(error: .invalidDeviceInput)
         }
         
         let metaDataOutput = AVCaptureMetadataOutput()
@@ -55,7 +60,7 @@ final class ScannerViewController: UIViewController {
             metaDataOutput.metadataObjectTypes = [.ean8, .ean13]
         }
         else {
-            return
+            scannerDelegate?.didSurface(error: .invalidDeviceInput)
         }
         
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
@@ -75,7 +80,10 @@ extension ScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
         guard let object = metadataObjects.first,
               let machineReadableObject = object as? AVMetadataMachineReadableCodeObject,
               let barcode = machineReadableObject.stringValue
-              else { return }
+        else {
+            scannerDelegate?.didSurface(error: .invalidScannedValue)
+            return
+        }
         
         scannerDelegate?.didFind(barcode: barcode)
     }
