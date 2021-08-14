@@ -19,6 +19,10 @@
 		A21EAEE126C77699008B93C2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EAEE026C77699008B93C2 /* NetworkManager.swift */; };
 		A21EAEE326C7777D008B93C2 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EAEE226C7777D008B93C2 /* APError.swift */; };
 		A21EAEE526C77EE7008B93C2 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EAEE426C77EE7008B93C2 /* AppetizerListViewModel.swift */; };
+		A21EAEE726C781F3008B93C2 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EAEE626C781F3008B93C2 /* Alert.swift */; };
+		A21EAEE926C786FE008B93C2 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EAEE826C786FE008B93C2 /* LoadingView.swift */; };
+		A21EAEEB26C7881B008B93C2 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EAEEA26C7881B008B93C2 /* Color+Ext.swift */; };
+		A21EAEED26C78DC3008B93C2 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EAEEC26C78DC3008B93C2 /* RemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		A21EAEE026C77699008B93C2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A21EAEE226C7777D008B93C2 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		A21EAEE426C77EE7008B93C2 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
+		A21EAEE626C781F3008B93C2 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		A21EAEE826C786FE008B93C2 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		A21EAEEA26C7881B008B93C2 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		A21EAEEC26C78DC3008B93C2 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +84,10 @@
 				A21EAECA26C75B25008B93C2 /* Preview Content */,
 				A21EAEE026C77699008B93C2 /* NetworkManager.swift */,
 				A21EAEE226C7777D008B93C2 /* APError.swift */,
-				A21EAEE426C77EE7008B93C2 /* AppetizerListViewModel.swift */,
+				A21EAEE626C781F3008B93C2 /* Alert.swift */,
+				A21EAEE826C786FE008B93C2 /* LoadingView.swift */,
+				A21EAEEA26C7881B008B93C2 /* Color+Ext.swift */,
+				A21EAEEC26C78DC3008B93C2 /* RemoteImage.swift */,
 			);
 			path = "SwiftUI-Appetizers";
 			sourceTree = "<group>";
@@ -95,6 +106,7 @@
 				A21EAEDD26C770C3008B93C2 /* Cells */,
 				A21EAEC626C75B21008B93C2 /* AppetizerTabView.swift */,
 				A21EAED326C75BA8008B93C2 /* AppetizerListView.swift */,
+				A21EAEE426C77EE7008B93C2 /* AppetizerListViewModel.swift */,
 				A21EAED526C75BB4008B93C2 /* AccountView.swift */,
 				A21EAED726C75BC3008B93C2 /* OrderView.swift */,
 			);
@@ -190,10 +202,14 @@
 				A21EAEE326C7777D008B93C2 /* APError.swift in Sources */,
 				A21EAEC726C75B21008B93C2 /* AppetizerTabView.swift in Sources */,
 				A21EAEE526C77EE7008B93C2 /* AppetizerListViewModel.swift in Sources */,
+				A21EAEEB26C7881B008B93C2 /* Color+Ext.swift in Sources */,
 				A21EAEDF26C770D7008B93C2 /* AppetizerListViewCell.swift in Sources */,
+				A21EAEE926C786FE008B93C2 /* LoadingView.swift in Sources */,
 				A21EAED626C75BB4008B93C2 /* AccountView.swift in Sources */,
 				A21EAEE126C77699008B93C2 /* NetworkManager.swift in Sources */,
+				A21EAEED26C78DC3008B93C2 /* RemoteImage.swift in Sources */,
 				A21EAEC526C75B21008B93C2 /* SwiftUI_AppetizersApp.swift in Sources */,
+				A21EAEE726C781F3008B93C2 /* Alert.swift in Sources */,
 				A21EAED426C75BA8008B93C2 /* AppetizerListView.swift in Sources */,
 				A21EAED826C75BC3008B93C2 /* OrderView.swift in Sources */,
 			);
