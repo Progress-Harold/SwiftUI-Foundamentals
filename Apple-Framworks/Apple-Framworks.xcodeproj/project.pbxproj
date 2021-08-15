@@ -16,6 +16,7 @@
 		A21EAE8B26C5C6E8008B93C2 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EAE8A26C5C6E8008B93C2 /* AFButton.swift */; };
 		A21EAE8D26C5D948008B93C2 /* FRameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EAE8C26C5D948008B93C2 /* FRameworkGridViewModel.swift */; };
 		A21EAE8F26C5EA6C008B93C2 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21EAE8E26C5EA6C008B93C2 /* SafariView.swift */; };
+		A2852A0A26C8D70A00A1F4D3 /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2852A0926C8D70A00A1F4D3 /* FrameworkDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A21EAE8A26C5C6E8008B93C2 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 		A21EAE8C26C5D948008B93C2 /* FRameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRameworkGridViewModel.swift; sourceTree = "<group>"; };
 		A21EAE8E26C5EA6C008B93C2 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		A2852A0926C8D70A00A1F4D3 /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				A21EAE8C26C5D948008B93C2 /* FRameworkGridViewModel.swift */,
 				A21EAE8426C39C7C008B93C2 /* Framework.swift */,
 				A21EAE8626C39D59008B93C2 /* FrameworkGridView.swift */,
+				A2852A0926C8D70A00A1F4D3 /* FrameworkDetailViewModel.swift */,
 				A21EAE8826C3A41F008B93C2 /* FrameworkDetailView.swift */,
 				A21EAE8A26C5C6E8008B93C2 /* AFButton.swift */,
 				A21EAE7926C39C62008B93C2 /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 				A21EAE8D26C5D948008B93C2 /* FRameworkGridViewModel.swift in Sources */,
 				A21EAE8B26C5C6E8008B93C2 /* AFButton.swift in Sources */,
 				A21EAE7626C39C60008B93C2 /* Apple_FramworksApp.swift in Sources */,
+				A2852A0A26C8D70A00A1F4D3 /* FrameworkDetailViewModel.swift in Sources */,
 				A21EAE8F26C5EA6C008B93C2 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

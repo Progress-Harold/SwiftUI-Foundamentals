@@ -35,6 +35,11 @@ struct FrameworkDetailView: View {
                 .padding(20)
             
             Spacer()
+            
+//            Link(destination: URL(string: framework.urlString)!) {
+//                AFButton(title: "Learn More")
+//            }
+
             Button {
                 isShowingSafariView = true
             } label: {
